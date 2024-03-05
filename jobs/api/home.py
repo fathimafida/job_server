@@ -1,11 +1,9 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework import serializers
 
-from apps import job
-from apps.job.api.serializers import PostJobSerializer
-from apps.job.models import PostJob
+from jobs.models import PostJob
+from jobs.api.serializers import PostJobSerializer
 
 
 class JobHomeAPIView(APIView):

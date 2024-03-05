@@ -1,7 +1,12 @@
 from django.urls import path
 
-from jobs.views import PostJobDetailAPIView, PostJobListAPIView
-from .views import UserRegister, UserLogin
+from jobs.api.job_post import (
+    PostJobDetailAPIView,
+    PostJobListAPIView,
+    UserLogin,
+    UserRegister,
+)
+
 
 urlpatterns = [
     path("posts/", PostJobListAPIView.as_view()),
