@@ -1,20 +1,18 @@
-from rest_framework import serializers
-
-
-from rest_framework import generics
 from rest_framework.filters import SearchFilter, OrderingFilter
 from django_filters.rest_framework import DjangoFilterBackend
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
+
+# from rest_framework.views import APIView
+# from rest_framework.response import Response
+# from rest_framework import status
 from rest_framework import generics
 
 from jobs.models import PostJob
-from jobs.api.serializers import CustomUserSerializer, PostJobSerializer
+
+# from jobs.api.serializers import CustomUserSerializer, PostJobSerializer
 from jobs.api.serializers import PostJobSerializer
 
-from django.contrib.auth.models import User as CustomUser
-from django.contrib.auth.hashers import check_password
+# from django.contrib.auth.models import User as CustomUser
+# from django.contrib.auth.hashers import check_password
 
 
 class PostJobListAPIView(generics.ListCreateAPIView):

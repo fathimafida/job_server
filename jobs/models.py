@@ -1,6 +1,6 @@
 from django.db import models
 
-# from django.contrib.auth.hashers import make_password
+from django.contrib.auth.hashers import make_password
 
 
 class PostJob(models.Model):
@@ -31,8 +31,8 @@ class PostJob(models.Model):
         default=JOB_LOCATION_TYPE.ONSITE,
     )
     url = models.URLField(max_length=1500)
-    createdAt = models.DateTimeField(auto_now_add=True)
-    updatedAt = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.title

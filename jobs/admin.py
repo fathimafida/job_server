@@ -1,5 +1,6 @@
 from django.contrib import admin
-from django.contrib.auth.models import User as CustomUser
+
+# from django.contrib.auth.models import User as CustomUser
 from jobs.models import PostJob
 
 # Register your models here.

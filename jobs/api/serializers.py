@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from ..models import PostJob
 
-from django.contrib.auth.models import User as CustomUser
+# from django.contrib.auth.models import User as CustomUser
 
 
 class PostJobSerializer(serializers.ModelSerializer):
